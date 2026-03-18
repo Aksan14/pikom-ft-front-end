@@ -76,24 +76,6 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-
-              <div className="mt-8 bg-white p-6 rounded-2xl border border-gray-100">
-                <h3 className="font-bold text-gray-900 mb-4">Jam Operasional</h3>
-                <div className="space-y-3 text-sm">
-                  <div className="flex justify-between items-center py-2 border-b border-gray-50">
-                    <span className="text-gray-600 font-medium">Senin - Jumat</span>
-                    <span className="bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-bold">08:00 - 16:00 WIB</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2 border-b border-gray-50">
-                    <span className="text-gray-600 font-medium">Sabtu</span>
-                    <span className="bg-yellow-50 text-yellow-700 px-3 py-1 rounded-full text-xs font-bold">08:00 - 12:00 WIB</span>
-                  </div>
-                  <div className="flex justify-between items-center py-2">
-                    <span className="text-gray-600 font-medium">Minggu & Hari Libur</span>
-                    <span className="bg-red-50 text-red-700 px-3 py-1 rounded-full text-xs font-bold">Tutup</span>
-                  </div>
-                </div>
-              </div>
             </div>
 
             {/* Contact Form */}
