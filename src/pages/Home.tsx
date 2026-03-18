@@ -129,7 +129,7 @@ export default function Home() {
         </div>
 
         <div className="relative max-w-7xl mx-auto px-6 lg:px-12 py-20 w-full">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="animate-fade-in-left text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-[1.1] tracking-tight">
@@ -141,7 +141,7 @@ export default function Home() {
                   </svg>
                 </span>
               </h1>
-              <p className="text-lg md:text-xl text-red-100/90 mb-8 leading-relaxed max-w-xl">
+              <p className="text-lg md:text-xl text-red-100/90 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
                 Pimpinan Komisariat Fakultas Teknik — Fakultas Teknik Universitas Muhammadiyah Makassar. 
                 Membentuk akademisi Islam yang berakhlak mulia dan berkemajuan.
               </p>
@@ -163,22 +163,22 @@ export default function Home() {
 
             </div>
 
-            {/* Right - Logo */}
+            {/* Right - Logo (appears first on mobile via flex-col-reverse) */}
             <div className="flex justify-center items-center animate-fade-in-right">
               <div className="relative">
                 {/* Glow ring */}
-                <div className="absolute inset-0 w-[280px] h-[280px] md:w-[440px] md:h-[440px] lg:w-[520px] lg:h-[520px] rounded-full bg-gradient-to-br from-yellow-400/20 to-red-600/20 blur-2xl animate-pulse-glow -m-8 md:-m-12 lg:-m-14"></div>
+                <div className="absolute inset-0 w-[320px] h-[320px] md:w-[440px] md:h-[440px] lg:w-[520px] lg:h-[520px] rounded-full bg-gradient-to-br from-yellow-400/20 to-red-600/20 blur-2xl animate-pulse-glow -m-10 md:-m-12 lg:-m-14"></div>
                 {/* Sun rays decorative */}
-                <div className="absolute inset-0 w-[280px] h-[280px] md:w-[440px] md:h-[440px] lg:w-[520px] lg:h-[520px] -m-8 md:-m-12 lg:-m-14 animate-rotate-slow" style={{ opacity: 0.08 }}>
+                <div className="absolute inset-0 w-[320px] h-[320px] md:w-[440px] md:h-[440px] lg:w-[520px] lg:h-[520px] -m-10 md:-m-12 lg:-m-14 animate-rotate-slow" style={{ opacity: 0.08 }}>
                   {[...Array(12)].map((_, i) => (
-                    <div key={i} className="absolute top-1/2 left-1/2 w-1 h-32 md:h-48 lg:h-56 bg-yellow-400 origin-bottom" style={{ transform: `translate(-50%, -100%) rotate(${i * 30}deg)` }}></div>
+                    <div key={i} className="absolute top-1/2 left-1/2 w-1 h-36 md:h-48 lg:h-56 bg-yellow-400 origin-bottom" style={{ transform: `translate(-50%, -100%) rotate(${i * 30}deg)` }}></div>
                   ))}
                 </div>
                 {/* Main logo */}
                 <img 
                   src="/IMG_4163.PNG" 
                   alt="Logo IMM Fakultas Teknik" 
-                  className="w-[220px] h-[220px] md:w-[360px] md:h-[360px] lg:w-[420px] lg:h-[420px] object-contain relative z-10 animate-float drop-shadow-2xl"
+                  className="w-[260px] h-[260px] md:w-[360px] md:h-[360px] lg:w-[420px] lg:h-[420px] object-contain relative z-10 animate-float drop-shadow-2xl"
                 />
               </div>
             </div>
