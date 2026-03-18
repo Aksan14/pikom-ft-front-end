@@ -141,17 +141,6 @@ export default function Login() {
               {loading ? 'Memproses...' : (isLogin ? 'Login' : 'Daftar')}
             </button>
           </form>
-
-          {isLogin && (
-            <div className="mt-6 p-4 bg-gray-50 rounded-xl border border-gray-100">
-              <p className="font-bold text-gray-700 text-xs mb-2">Demo Login:</p>
-              <div className="space-y-1 text-xs text-gray-500">
-                <p>Admin: <span className="font-mono">admin@imm.org / admin123</span></p>
-                <p>Pengurus: <span className="font-mono">pengurus1@imm.org / pengurus123</span></p>
-                <p>Anggota: <span className="font-mono">anggota1@imm.org / anggota123</span></p>
-              </div>
-            </div>
-          )}
         </div>
 
         <div className="text-center mt-8">
