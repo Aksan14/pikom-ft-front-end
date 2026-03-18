@@ -87,7 +87,7 @@ export default function Footer() {
                 <div className="w-8 h-8 bg-yellow-900/50 rounded-lg flex items-center justify-center flex-shrink-0">
                   <HiMail className="text-yellow-400" size={14} />
                 </div>
-                <span className="text-gray-400 text-sm">imm.Fakultas Teknik@unismuh.ac.id</span>
+                <span className="text-gray-400 text-sm">imm.ft@unismuh.ac.id</span>
               </li>
             </ul>
           </div>
@@ -97,7 +97,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-500 text-sm">
-              &copy; {new Date().getFullYear()} IMM PK Fakultas Teknik Fakultas Teknik Unismuh Makassar
+              &copy; {new Date().getFullYear()} Sanix. Built with passion.
             </p>
             <div className="flex items-center gap-4">
               <div className="flex gap-1.5">

@@ -142,7 +142,7 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-red-100/90 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
-                Pimpinan Komisariat Fakultas Teknik — Fakultas Teknik Universitas Muhammadiyah Makassar. 
+                Pimpinan Komisariat — Fakultas Teknik Universitas Muhammadiyah Makassar. 
                 Membentuk akademisi Islam yang berakhlak mulia dan berkemajuan.
               </p>
               <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
