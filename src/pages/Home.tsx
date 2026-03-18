@@ -18,11 +18,11 @@ export default function Home() {
   const [articles, setArticles] = useState<Article[]>([]);
   const [prayerTimes, setPrayerTimes] = useState<PrayerTimes | null>(null);
   const [prayerDate, setPrayerDate] = useState('');
-  const [nextPrayer, setNextPrayer] = useState('');
-  const [countdown, setCountdown] = useState('');
+  const [, setNextPrayer] = useState('');
+  const [, setCountdown] = useState('');
   const [currentWita, setCurrentWita] = useState('');
-  const [nextPrayerTime, setNextPrayerTime] = useState('');
-  const [passedPrayers, setPassedPrayers] = useState<string[]>([]);
+  const [, setNextPrayerTime] = useState('');
+  const [, setPassedPrayers] = useState<string[]>([]);
 
   useEffect(() => {
     api.get('/events/upcoming').then(res => {
@@ -358,7 +358,7 @@ export default function Home() {
             </div>
           ) : (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {events.slice(0, 6).map((event, i) => (
+              {events.slice(0, 6).map((event) => (
                 <Link key={event.id} to={`/kegiatan/${event.id}`} className="group bg-white rounded-2xl overflow-hidden card-hover border border-gray-100">
                   <div className="h-52 bg-gradient-to-br from-red-800 via-red-700 to-red-900 flex items-center justify-center relative overflow-hidden">
                     {event.poster ? (

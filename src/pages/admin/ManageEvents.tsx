@@ -10,7 +10,7 @@ export default function ManageEvents() {
   const [loading, setLoading] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const [editing, setEditing] = useState<Event | null>(null);
-  const [page, setPage] = useState(1);
+  const [page] = useState(1);
   const [total, setTotal] = useState(0);
   const [form, setForm] = useState({
     title: '', description: '', category: 'kajian', date: '', time: '', location: '', poster: '', status: 'akan_datang',

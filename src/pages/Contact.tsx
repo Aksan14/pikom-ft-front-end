@@ -1,4 +1,4 @@
-import { HiMail, HiPhone, HiLocationMarker } from 'react-icons/hi';
+import { HiMail, HiLocationMarker } from 'react-icons/hi';
 import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
 
 export default function Contact() {

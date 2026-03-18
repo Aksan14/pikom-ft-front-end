@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import api from '../../services/api';
-import type { DashboardStats, Event, Article } from '../../types';
+import type { DashboardStats, Event } from '../../types';
 import { HiUsers, HiCalendar, HiDocumentText, HiUserAdd, HiTrendingUp, HiClipboardList } from 'react-icons/hi';
 import LoadingSpinner from '../../components/LoadingSpinner';
 

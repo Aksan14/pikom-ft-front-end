@@ -9,7 +9,7 @@ import toast from 'react-hot-toast';
 
 export default function EventDetail() {
   const { id } = useParams();
-  const { isAuthenticated, user } = useAuth();
+  const { isAuthenticated } = useAuth();
   const [event, setEvent] = useState<Event | null>(null);
   const [participants, setParticipants] = useState(0);
   const [isRegistered, setIsRegistered] = useState(false);
